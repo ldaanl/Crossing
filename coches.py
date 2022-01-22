@@ -22,4 +22,10 @@ class Car():
     def move_cars(self):
         for i in self.cars:
             i.backward(10)
+    
+    def reset_cars(self):
+        for car in self.cars:
+            car.hideturtle()
+        self.cars.clear()
+        self.init_car()
 
